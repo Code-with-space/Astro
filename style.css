@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    
+}
+.logo{
+    color: rgb(218, 169, 10);
+    font-size: 2rem;
+}
+header ul{
+    display: flex;
+    list-style: none;
+}
+header::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+
+}
+
+header ul li{
+    margin: 4px 10px;
+    font-size: 1rem;
+}
+header ul li a{
+    text-decoration: none;
+    color: #fbfbfc;
+    padding: 3px 15px;
+    display: block;
+}
+header ul li a:hover{
+    color: black;
+    background-color: #ebf5f3;
+    border: 2px solid none;
+    border-radius: 10px;
+}
+
+.home-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 100px;
+    justify-content: center;
+    height: 420px;
+    
+    
+}
+.home-page::before{
+    content: "";
+    background: url('bg.webp') center;
+    position: absolute;
+    height: 650px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.90;
+}
+
+.welcome-h{
+    font-size: 2rem;
+    color: white;
+    padding: 20px;
+    
+    
+}
+.address{
+    text-align: center;
+    color: black;
+    font-size: 1rem;
+}
+.ticket-book{
+    margin-top: 20px;
+    height: 2rem;
+    width: 6rem;
+    background-color: rgb(158, 88, 7);
+    border-radius: 10px;
+    border: none;
+    transition: transform 0.3s;
+    
+}
+.ticket-book:hover{
+    transform: scale(0.9);
+    background-color: rgb(236, 54, 48)
+}
+.center{
+    text-align: center;
+    font-size: 3rem;
+    
+}
+.content{
+    margin-top: 180px;
+}
+
+.content-box{
+    display: flex;
+    margin: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.item-box{
+    border: 2px solid black;
+    margin: 35px;
+    width: 330px;
+    height: 480px;
+}
+.item-box p{
+    margin-left: 10px;
+}
+.item-box img{
+    width: 300px;
+    display: block;
+    margin: auto;
+    padding: 15px;
+}
+.name{
+    font-size: 2rem;
+    text-align: center;
+}
+.touch{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.see-all{
+    text-align: center;
+    margin-left: 10px;
+}
+.tb-box{
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+.content-img{
+    transition: transform 0.3s;
+}
+.content-img:hover{
+    transform: scale(0.9);
+}
+footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px;
+}
+.contact p{
+    margin: 10px;
+}

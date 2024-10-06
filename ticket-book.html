@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book ticket</title>
+    <link rel="stylesheet" href="ticket.css">
+</head>
+<body>
+    <div class="tital">
+        <h2>ticket book form</h2>
+    </div>
+    <div class="formfill">
+        <form id="booking-form">
+            <label for="name">enter your name</label>
+            <br>
+            <input type="text" id="name" placeholder="enter your name" required> 
+            <br>
+            <label for="Email">enter your Email</label>
+            <br>
+            <input type="email" id="mail" placeholder="enter your email" required> 
+            <br>
+            <label for="number">enter your number</label>
+            <br>
+            <input type="tel" id="number" placeholder="enter your number" required> 
+            <br>
+            <label for="age">enter your age</label>
+            <br>
+            <input type="text" id="age" placeholder="enter your age" required> 
+            <br>
+            <label for="address">enter your address</label>
+            <br>
+            <input type="text" id="address" placeholder="enter your address" required> 
+            <br>
+            <label for="date">enter visiting date</label>
+            <br>
+            <input type="date" id="dare" placeholder="enter visiting date" required> 
+            <br>
+            <button type="submit" id="submit-button">ticket book</button>
+        </form>
+    </div>
+<!-- <div class="total-co">
+    <p id="total-cost"></p>
+    </div>
+    <div class="model">
+        <p id="cost-summury">$15</p>
+        <p id="do-you">do you want conform this ticket</p>
+        <button class="conform">yes</button>
+        <button class="cancel">No</button>
+    </div>
+    <p id="success-mgs">booking successfull</p>
+
+ -->
+    <script>
+    document.getElementById("booking-form").addEventListener("submit", function(event) {
+    event.preventDefault(); // Form ko submit hone se rokne ke liye
+    let confirmation = confirm("Kya aap ticket book karna chahte hai?");
+    if (confirmation) {
+        alert("Ticket successfully book ho gayi hai!");
+    } else {
+        alert("Ticket booking cancel kar di gayi hai.");
+    }
+});
+    </script>
+
+    
+</body>
+</html>
