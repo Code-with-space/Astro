@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book ticket</title>
+    <link rel="stylesheet" href="ticket.css">
+</head>
+<body>
+    <div class="tital">
+        <h2>ticket book form</h2>
+    </div>
+    <div class="formfill">
+        <form id="booking-form">
+            <label for="name">enter your name</label>
+            <br>
+            <input type="text" id="name" placeholder="enter your name" required> 
+            <br>
+            <label for="Email">enter your Email</label>
+            <br>
+            <input type="email" id="mail" placeholder="enter your email" required> 
+            <br>
+            <label for="number">enter your number</label>
+            <br>
+            <input type="tel" id="number" placeholder="enter your number" required> 
+            <br>
+            <label for="age">enter your age</label>
+            <br>
+            <input type="text" id="age" placeholder="enter your age" required> 
+            <br>
+            <label for="address">enter your address</label>
+            <br>
+            <input type="text" id="address" placeholder="enter your address" required> 
+            <br>
+            <label for="date">enter visiting date</label>
+            <br>
+            <input type="date" id="date" placeholder="enter visiting date" required> 
+            <br>
+            <button type="submit" id="submit-button">ticket book</button>
+        </form>
+    </div>
+    <div class="model">
+        <div class="display">
+            <p>ticket price is ₹1000.</p>
+            <P>DO YOU WANT CONFORM THIS TICKET.</P>
+            <div class="conform-button">
+                <button id="yes" class="conform-btn">yes book</button>
+                <button id="cancel" class="conform-btn">No cancel</button>
+            </div>
+        </div>
+    </div>
+    <div id="result-box">
+        <div class="result" id="results"></div>
+        <button id="bookNow" class="bookclass">Book Now</button>
+        <div id="successfully">
+            <p>successfully booking</p>
+            <button id="Print" class="bookclass">Print Now</button>
+        </div>
+    </div>
+   
+
+
+    <script>
+        var submitButton = document.getElementById('booking-form');
+        submitButton.addEventListener('submit', function(event){
+            event.preventDefault();
+            var model= document.getElementsByClassName('model')[0];
+            model.style.display = "block";
+        });
+
+        var yesdisplay = document.getElementById('yes');
+        yesdisplay.addEventListener('click',function(){
+            var resultbox = document.getElementById('result-box');
+            resultbox.style.display =  "block";
+        });
+
+        document.getElementById('yes').addEventListener('click',function(){
+            var name = document.getElementById('name').value;
+            var mail = document.getElementById('mail').value;
+            var number = document.getElementById('number').value;
+            var age = document.getElementById('age').value;
+            var address = document.getElementById('address').value;
+            var date = document.getElementById('date').value;
+            var resultdiv = document.getElementById('results');
+
+            resultdiv.innerHTML = `<h2> submited details; </h2>
+            <p><strong> Name: </strong>${name} </p>
+            <p><strong> Email: </strong>${mail} </p>
+            <p><strong> number: </strong>${number} </p>
+            <p><strong> age: </strong>${age} </p>
+            <p><strong> address: </strong>${address} </p>
+            <p><strong> date: </strong>${date} </p>`;
+        });
+
+
+
+        document.getElementById('bookNow').addEventListener('click', function(booklet){
+            booklet.preventDefault();
+            var successfully = document.getElementById('successfully');
+            successfully.style.display = "block"
+
+
+        })
+
+
+
+        
+    </script>
+    
+    
+</body>
+</html>

@@ -1,0 +1,108 @@
+.tital{
+   text-align: center;
+   font-size: 2rem;
+}
+.formfill{
+    display: flex;
+    justify-content: center;
+}
+#booking-form input{
+    margin: 5px;
+    height: 20px;
+    width: 300px;
+
+}
+#booking-form button{
+    margin-top: 5px;
+    height: 30px;
+    width: 150px;
+    margin-left: 5px;
+    font-size: 1.5rem;
+    text-align: center;
+    background-color: rgb(184, 113, 28);
+    border: none;
+    border-radius: 5px;
+    transition: transform 0.3s;
+    
+    
+
+}
+#booking-form button:hover{
+    transform: scale(0.9);
+    background-color: rgb(15, 161, 88);
+
+}
+.model{
+    display: none;
+}
+.display{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.display p{
+   text-align: center;
+   font-size: 20px;
+}
+.conform-button{
+    display: flex;
+    justify-content: center;
+}
+
+.conform-btn{
+    height: 30px;
+    width: 150px;
+    background-color: rgb(241, 226, 11);
+    margin: 15px;
+    border: none;
+    border-radius: 10px;
+    transition: 0.3s;
+    font-size: 1.2rem;
+
+}
+.conform-btn:hover{
+    transform: scale(0.9);
+    color: rgb(240, 247, 241);
+    background-color: green;
+
+}
+.result{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+   
+}
+#result-box{
+    display: none;
+    text-align: center;
+    padding: 20px;
+    border: 2px solid;
+}
+
+.bookclass{
+    width: 120px;
+    height: 27px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    transition: 0.3s;
+
+}
+.bookclass:hover{
+    transform: scale(0.9);
+    background-color: red;
+    color: black;
+}
+
+
+
+#successfully{
+    text-align: center;
+    font-size: 1.5rem;
+    color: green;
+    display: none;
+}
+
+
